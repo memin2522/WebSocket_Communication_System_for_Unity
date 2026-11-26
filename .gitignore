@@ -1,0 +1,40 @@
+# Python
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.venv/
+venv/
+env/
+
+# Node
+node_modules/
+npm-debug.log*
+
+# Configuración local
+.env
+
+# Unity
+clients/unity/[Ll]ibrary/
+clients/unity/[Tt]emp/
+clients/unity/[Oo]bj/
+clients/unity/[Bb]uild/
+clients/unity/[Bb]uilds/
+clients/unity/[Ll]ogs/
+clients/unity/[Uu]ser[Ss]ettings/
+clients/unity/Assets/Plugins/SocketIO/
+*.csproj
+*.sln
+.vs/
+.idea/
+.vscode/
+
+# Entregables generados
+entrega/*.zip
+entrega/pdf/
+entrega/latex/*.aux
+entrega/latex/*.log
+entrega/latex/*.out
+entrega/latex/*.toc
+
+# Sistema
+.DS_Store

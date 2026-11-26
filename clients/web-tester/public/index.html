@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="UTF-8" />
+    <title>WebSocket Communication System - Test Client</title>
+    <script src="https://cdn.socket.io/4.7.5/socket.io.min.js"></script>
+    <script src="config.js"></script>
+</head>
+
+<body>
+    <h1>Client Functions</h1>
+    <hr />
+    <h2>Join to WebSockets as:</h2>
+    <select id="roleSelect"></select>
+    <button id="joinSessionBtn">Join as role</button>
+
+    <hr />
+
+    <h2>Send Messages to the server</h2>
+
+    <h3>Display Client Actions</h3>
+    <p>Ask a question</p>
+    <input type="text" id="questionInput" placeholder="Ask a question to the AI client" />
+    <button id="askQuestionBtn">Send Question</button>
+
+    <h3>AI Client Actions</h3>
+
+    <p>Simulate a listened question</p>
+    <input type="text" id="listenInput" placeholder="Simulate a listened questions" />
+    <button id="listenQuestionBtn">Send Question</button>
+
+    <p>Send answer</p>
+    <input type="text" id="answerInput" placeholder="Send the answer to the display client" />
+    <button id="sendAnswerBtn">Send Answer</button>
+
+    <h3>General Actions</h3>
+    <p>Disconnect from server</p>
+    <button id="disconnectBtn">Disconnect</button>
+
+    <script type="module" src="websocket.js"></script>
+</body>
+
+</html>
